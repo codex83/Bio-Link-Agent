@@ -1,0 +1,218 @@
+{
+  "description": "Labeled evaluation dataset for Bio-Link Agent semantic matcher. Each patient case includes ground truth trial matches (correct NCT IDs) that should be found by the system.",
+  "version": "1.0",
+  "created": "2025-01-XX",
+  "evaluation_cases": [
+    {
+      "patient_id": "lung_cancer_patient_1",
+      "condition": "lung_cancer",
+      "patient_description": "67-year-old male with progressive shortness of breath and persistent cough. Recent CT scan shows mass in right upper lobe. Biopsy confirmed non-small cell lung cancer (NSCLC), adenocarcinoma subtype. Stage IIIA. Patient is a former smoker (quit 5 years ago). No prior cancer treatment. Performance status good.",
+      "patient_conditions": [
+        "lung cancer",
+        "non-small cell lung cancer",
+        "NSCLC"
+      ],
+      "patient_age": 67,
+      "patient_sex": "MALE",
+      "patient_labs": null,
+      "ground_truth_trials": [
+        {
+          "nct_id": "NCT04227457",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.924) and patient passes eligibility criteria"
+        },
+        {
+          "nct_id": "NCT05991193",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.924) and patient passes eligibility criteria"
+        },
+        {
+          "nct_id": "NCT05339568",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.923) and patient passes eligibility criteria"
+        }
+      ],
+      "notes": "Patient should match trials specifically for NSCLC adenocarcinoma, Stage IIIA, treatment-naive patients",
+      "_auto_generated": true,
+      "_generation_metadata": {
+        "num_candidates": 3,
+        "scores": [
+          0.9244887828826904,
+          0.9242913722991943,
+          0.9229217171669006
+        ]
+      }
+    },
+    {
+      "patient_id": "lung_cancer_patient_2",
+      "condition": "lung_cancer",
+      "patient_description": "52-year-old female with metastatic lung cancer, previously treated with chemotherapy. Now experiencing worsening fatigue and back pain. Imaging shows progression with new bone metastases. EGFR mutation positive. Seeking new treatment options.",
+      "patient_conditions": [
+        "metastatic lung cancer",
+        "lung cancer"
+      ],
+      "patient_age": 52,
+      "patient_sex": "FEMALE",
+      "patient_labs": null,
+      "ground_truth_trials": [
+        {
+          "nct_id": "NCT05258448",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.929) and patient passes eligibility criteria"
+        },
+        {
+          "nct_id": "NCT05257967",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.924) and patient passes eligibility criteria"
+        },
+        {
+          "nct_id": "NCT00771563",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.923) and patient passes eligibility criteria"
+        }
+      ],
+      "notes": "Patient should match trials for EGFR-positive metastatic lung cancer, second-line or later treatment",
+      "_auto_generated": true,
+      "_generation_metadata": {
+        "num_candidates": 3,
+        "scores": [
+          0.9286226630210876,
+          0.9238808751106262,
+          0.9230653643608093
+        ]
+      }
+    },
+    {
+      "patient_id": "glioblastoma_patient_1",
+      "condition": "glioblastoma",
+      "patient_description": "45-year-old male with recent onset headaches, vision problems, and memory issues. MRI revealed large mass in frontal lobe. Surgical biopsy confirmed glioblastoma multiforme (GBM), grade IV. Patient completed standard radiation and temozolomide. Disease progression detected on follow-up scan. Karnofsky score 80.",
+      "patient_conditions": [
+        "glioblastoma",
+        "brain cancer",
+        "GBM"
+      ],
+      "patient_age": 45,
+      "patient_sex": "MALE",
+      "patient_labs": null,
+      "ground_truth_trials": [
+        {
+          "nct_id": "NCT06146738",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.937) and patient passes eligibility criteria"
+        },
+        {
+          "nct_id": "NCT06108206",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.934) and patient passes eligibility criteria"
+        },
+        {
+          "nct_id": "NCT06146725",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.934) and patient passes eligibility criteria"
+        }
+      ],
+      "notes": "Patient should match trials for recurrent GBM, post-radiation/temozolomide, good performance status",
+      "_auto_generated": true,
+      "_generation_metadata": {
+        "num_candidates": 3,
+        "scores": [
+          0.9365068078041077,
+          0.9342759847640991,
+          0.9342645406723022
+        ]
+      }
+    },
+    {
+      "patient_id": "glioblastoma_patient_2",
+      "condition": "glioblastoma",
+      "patient_description": "58-year-old female with recurrent glioblastoma. Original diagnosis 14 months ago, treated with surgery, radiation, and chemotherapy. Recent MRI shows tumor recurrence. Patient experiencing increased seizure frequency and cognitive decline. IDH wild-type, MGMT unmethylated. Interested in immunotherapy trials.",
+      "patient_conditions": [
+        "recurrent glioblastoma",
+        "glioblastoma"
+      ],
+      "patient_age": 58,
+      "patient_sex": "FEMALE",
+      "patient_labs": null,
+      "ground_truth_trials": [
+        {
+          "nct_id": "NCT05186064",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.943) and patient passes eligibility criteria"
+        },
+        {
+          "nct_id": "NCT02473484",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.940) and patient passes eligibility criteria"
+        },
+        {
+          "nct_id": "NCT06059690",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.938) and patient passes eligibility criteria"
+        }
+      ],
+      "notes": "Patient specifically interested in immunotherapy trials for recurrent GBM",
+      "_auto_generated": true,
+      "_generation_metadata": {
+        "num_candidates": 3,
+        "scores": [
+          0.9431614875793457,
+          0.939761757850647,
+          0.9384946227073669
+        ]
+      }
+    },
+    {
+      "patient_id": "diabetes_patient_1",
+      "condition": "type_2_diabetes",
+      "patient_description": "62-year-old overweight male with poorly controlled blood sugar levels. Diagnosed with Type 2 diabetes 8 years ago. Current HbA1c is 9.2%. Taking metformin and glipizide but still experiencing hyperglycemia. Patient reports frequent urination, increased thirst, and blurry vision. BMI 34. No diabetic complications yet.",
+      "patient_conditions": [
+        "type 2 diabetes",
+        "hyperglycemia"
+      ],
+      "patient_age": 62,
+      "patient_sex": "MALE",
+      "patient_labs": {
+        "HbA1c": 9.2
+      },
+      "ground_truth_trials": [
+        {
+          "nct_id": "REQUIRED",
+          "match_type": "exact",
+          "reason": "Should match trials for Type 2 diabetes with poor glycemic control (HbA1c > 7%)"
+        }
+      ],
+      "notes": "Patient should match trials for uncontrolled Type 2 diabetes, may have HbA1c thresholds"
+    },
+    {
+      "patient_id": "diabetes_patient_2",
+      "condition": "type_2_diabetes",
+      "patient_description": "55-year-old female with Type 2 diabetes and early diabetic kidney disease. Current medications include metformin and insulin. Difficulty maintaining stable glucose levels despite treatment. Patient is motivated to try new therapies. Recent labs show elevated creatinine and microalbuminuria. No cardiovascular disease.",
+      "patient_conditions": [
+        "type 2 diabetes",
+        "diabetic nephropathy"
+      ],
+      "patient_age": 55,
+      "patient_sex": "FEMALE",
+      "patient_labs": {
+        "creatinine": 1.3,
+        "microalbuminuria": 30
+      },
+      "ground_truth_trials": [
+        {
+          "nct_id": "NCT06283992",
+          "match_type": "auto_generated",
+          "reason": "High semantic score (0.934) and patient passes eligibility criteria"
+        }
+      ],
+      "notes": "Patient should match trials for Type 2 diabetes with kidney complications",
+      "_auto_generated": true,
+      "_generation_metadata": {
+        "num_candidates": 1,
+        "scores": [
+          0.933519184589386
+        ]
+      }
+    }
+  ],
+  "evaluation_notes": "This dataset will be populated with actual NCT IDs after manual review of trial eligibility criteria. For now, it serves as a template for evaluation structure."
+}
