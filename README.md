@@ -26,6 +26,7 @@ Built with: **NLP** • **MCP Tools** • **Neo4j** • **Vector Search** • **
 - [Installation](#️-installation)
 - [Usage](#️-usage)
 - [Project Structure](#-project-structure)
+- [Understanding the Project](#-understanding-the-project)
 - [Future Work](#-future-work)
 - [Disclaimer](#️-disclaimer)
 - [Acknowledgments](#-acknowledgments)
@@ -323,6 +324,21 @@ Bio-Link-Agent-NLP/
 - **`src/server.py`**: MCP server for clinician-facing tools
 - **`src/clients/`**: API wrappers for data sources
 - **`src/rag/`**: Vector and graph storage engines
+
+---
+
+## 📖 Understanding the Project
+
+**New to medicine or data science?** Check out [`PROJECT_EXPLANATION.md`](PROJECT_EXPLANATION.md) for a beginner-friendly guide that explains:
+
+- What the project does in simple terms
+- Medical concepts (clinical trials, PubMed, oncology, etc.)
+- Data science concepts (NLP, embeddings, vector search, RAG, etc.)
+- How all the components work together
+- Step-by-step examples of how data flows through the system
+- Why this project matters and what problems it solves
+
+Perfect for beginners who want to understand both the medical and technical aspects of the system!
 
 ---
 
