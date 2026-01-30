@@ -21,7 +21,7 @@ Built with: **NLP** • **MCP Tools** • **Neo4j** • **Vector Search** • **
 - [Features](#-features)
   - [Clinician: Patient-Level Trial Matching](#-clinician-patient-level-trial-matching)
   - [Researcher: Landscape Graph Builder](#-researcher-landscape-graph-builder)
-  - [Research Q&A (Planned)](#-planned-research-qa-with-kg--vector-rag)
+  - [Research Q&A](#-planned-research-qa-with-kg--vector-rag)
 - [Architecture](#-architecture-overview)
 - [Installation](#️-installation)
 - [Usage](#️-usage)
@@ -117,7 +117,7 @@ Interactive Neo4j-powered graph exploration through Streamlit UI
 
 ---
 
-### 🧠 **(Planned) Research Q&A with KG + Vector RAG**
+### 🧠 **Research Q&A with KG + Vector RAG**
 
 Combining structured graph queries with unstructured text retrieval for intelligent question answering.
 
